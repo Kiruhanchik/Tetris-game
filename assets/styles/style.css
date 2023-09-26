@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Roboto;
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: Bungee;
+    src: url('../fonts/BungeeSpice-Regular.ttf');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Roboto';
+}
+  
+canvas {
+    border: 5px solid rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+
+header {
+    font-family: 'Roboto';
+    font-size: 140%;
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+header a {
+    text-decoration: none;
+    font-family: 'Bungee';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    border: 2px solid black;
+    background-color: rgb(24, 220, 37);
+    font-size: 90%;
+    transition: 0.3s;
+}
+
+#start:hover {
+    background-color: rgb(57, 249, 18);
+    box-shadow: 2px 2px 2px rgb(81, 80, 80);
+}
+
+#start:active {
+    transform:scale(0.90)
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5%;
+}
+
+#options button {
+    width: 30%;
+}
+
+#end {
+    border: 2px solid black;
+    background-color: rgb(224, 80, 54);
+    font-size: 90%;
+    transition: 0.3s;
+    margin-left: 5%;
+}
+
+#end:hover {
+    background-color: rgb(216, 61, 13);
+    box-shadow: 2px 2px 2px rgb(81, 80, 80);
+}
+
+#end:active {
+    transform:scale(0.90)
+}
+
+main p {
+    font-size: 90%;
+    margin: 0;
+    padding: 0;
+}
+
+.params {
+    padding-top: 3%;
+}
